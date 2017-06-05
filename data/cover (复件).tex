@@ -1,0 +1,296 @@
+\thusetup{
+  %******************************
+  % 注意：
+  %   1. 配置里面不要出现空行
+  %   2. 不需要的配置信息可以删除
+  %******************************
+  %
+  % 中国海洋大学研究生学位论文封面
+  % 参考：中国海洋大学研究生学位论文书写格式20130307.doc
+  % 为避免出现错误，下面保留［清华大学学位论文模板原有定义无需修改］，
+  % 请直接跳到后面［中国海洋大学学位论文模板部分请根据自己情况修改］。
+  %
+%%%%%%%%%%%%%%%%%%%%%%［清华大学学位论文模板原有定义无需修改］%%%%%%%%%%%%%%%%%%%%%%%
+  %=====
+  % 秘级
+  %=====
+  secretlevel={秘密},
+  secretyear={10},
+  %
+  %=========
+  % 中文信息
+  %=========
+  ctitle={清华大学学位论文 \LaTeX\ 模板\\使用示例文档 v\version},
+  cdegree={工学硕士},
+  cdepartment={计算机科学与技术系},
+  cmajor={计算机科学与技术},
+  cauthor={薛瑞尼},
+  csupervisor={郑纬民教授},
+  cassosupervisor={陈文光教授}, % 副指导老师
+  ccosupervisor={某某某教授}, % 联合指导老师
+  % 日期自动使用当前时间，若需指定按如下方式修改：
+  % cdate={超新星纪元},
+  %
+  % 博士后专有部分
+  cfirstdiscipline={计算机科学与技术},
+  cseconddiscipline={系统结构},
+  postdoctordate={2009年7月——2011年7月},
+  id={编号}, % 可以留空： id={},
+  udc={UDC}, % 可以留空
+  catalognumber={分类号}, % 可以留空
+  %
+  %=========
+  % 英文信息
+  %=========
+  etitle={An Introduction to \LaTeX{} Thesis Template of Tsinghua University v\version},
+  % 这块比较复杂，需要分情况讨论：
+  % 1. 学术型硕士
+  %    edegree：必须为Master of Arts或Master of Science（注意大小写）
+  %             “哲学、文学、历史学、法学、教育学、艺术学门类，公共管理学科
+  %              填写Master of Arts，其它填写Master of Science”
+  %    emajor：“获得一级学科授权的学科填写一级学科名称，其它填写二级学科名称”
+  % 2. 专业型硕士
+  %    edegree：“填写专业学位英文名称全称”
+  %    emajor：“工程硕士填写工程领域，其它专业学位不填写此项”
+  % 3. 学术型博士
+  %    edegree：Doctor of Philosophy（注意大小写）
+  %    emajor：“获得一级学科授权的学科填写一级学科名称，其它填写二级学科名称”
+  % 4. 专业型博士
+  %    edegree：“填写专业学位英文名称全称”
+  %    emajor：不填写此项
+  edegree={Doctor of Engineering},
+  emajor={Computer Science and Technology},
+  eauthor={Xue Ruini},
+  esupervisor={Professor Zheng Weimin},
+  eassosupervisor={Chen Wenguang},
+  % 日期自动生成，若需指定按如下方式修改：
+  % edate={December, 2005}
+  %
+  % 关键词用“英文逗号”分割
+  ckeywords={\TeX, \LaTeX, CJK, 模板, 论文},
+  ekeywords={\TeX, \LaTeX, CJK, template, thesis}
+}
+
+% 定义中英文摘要和关键字
+\begin{cabstract}
+  论文的摘要是对论文研究内容和成果的高度概括。摘要应对论文所研究的问题及其研究目
+  的进行描述，对研究方法和过程进行简单介绍，对研究成果和所得结论进行概括。摘要应
+  具有独立性和自明性，其内容应包含与论文全文同等量的主要信息。使读者即使不阅读全
+  文，通过摘要就能了解论文的总体内容和主要成果。
+
+  论文摘要的书写应力求精确、简明。切忌写成对论文书写内容进行提要的形式，尤其要避
+  免“第 1 章……；第 2 章……；……”这种或类似的陈述方式。
+
+  本文介绍清华大学论文模板 \thuthesis{} 的使用方法。本模板符合学校的本科、硕士、
+  博士论文格式要求。
+
+  本文的创新点主要有：
+  \begin{itemize}
+    \item 用例子来解释模板的使用方法；
+    \item 用废话来填充无关紧要的部分；
+    \item 一边学习摸索一边编写新代码。
+  \end{itemize}
+
+  关键词是为了文献标引工作、用以表示全文主要内容信息的单词或术语。关键词不超过 5
+  个，每个关键词中间用分号分隔。（模板作者注：关键词分隔符不用考虑，模板会自动处
+  理。英文关键词同理。）
+\end{cabstract}
+
+% 如果习惯关键字跟在摘要文字后面，可以用直接命令来设置，如下：
+% \ckeywords{\TeX, \LaTeX, CJK, 模板, 论文}
+
+\begin{eabstract}
+   An abstract of a dissertation is a summary and extraction of research work
+   and contributions. Included in an abstract should be description of research
+   topic and research objective, brief introduction to methodology and research
+   process, and summarization of conclusion and contributions of the
+   research. An abstract should be characterized by independence and clarity and
+   carry identical information with the dissertation. It should be such that the
+   general idea and major contributions of the dissertation are conveyed without
+   reading the dissertation.
+
+   An abstract should be concise and to the point. It is a misunderstanding to
+   make an abstract an outline of the dissertation and words ``the first
+   chapter'', ``the second chapter'' and the like should be avoided in the
+   abstract.
+
+   Key words are terms used in a dissertation for indexing, reflecting core
+   information of the dissertation. An abstract may contain a maximum of 5 key
+   words, with semi-colons used in between to separate one another.
+\end{eabstract}
+
+% \ekeywords{\TeX, \LaTeX, CJK, template, thesis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%［中国海洋大学学位论文模板部分请根据自己情况修改］%%%%%%%%%%%%%%%%%%%
+% 中国海洋大学研究生学位论文封面
+% 必须填写的内容包括（其他最好不要修改）：
+%   分类号、密级、UDC
+%   论文中文题目、作者中文姓名
+%   论文答辩时间
+%   封面感谢语
+%   论文英文题目
+%   中文摘要、中文关键词
+%   英文摘要、英文关键词
+%
+%%%%%［自定义］%%%%%
+\newcommand{\fenleihao}{}%分类号
+\newcommand{\miji}{}%密级 
+                    % 绝密$\bigstar$20年 
+                    % 机密$\bigstar$10年
+                    % 秘密$\bigstar$5年
+\newcommand{\UDC}{}%UDC
+\newcommand{\oucctitle}{基于多特征卷积神经网络的浮游生物图像分类研究}%论文中文题目
+\ctitle{基于多特征卷积神经网络的浮游生物图像分类研究}%必须修改因为页眉中用到
+\cauthor{戴嘉伦}%可以选择修改因为仅在 pdf 文档信息中用到
+\cdegree{工学硕士}%可以选择修改因为仅在 pdf 文档信息中用到
+\ckeywords{\TeX, \LaTeX, CJK, 模板, 论文}%可以选择修改因为仅在 pdf 文档信息中用到
+\newcommand{\ouccauthor}{戴嘉伦}%作者中文姓名
+%\newcommand{\ouccsupervisor}{姬光荣教授}%作者导师中文姓名
+%\newcommand{\ouccdegree}{博\hspace{1em}士}%作者申请学位级别
+%\newcommand{\ouccmajor}{海洋信息探测与处理}%作者专业名称
+%\newcommand{\ouccdateday}{\CJKdigits{\the\year}年\CJKnumber{\the\month}月\CJKnumber{\the\day}日}
+%\newcommand{\ouccdate}{\CJKdigits{\the\year}年\CJKnumber{\the\month}月}
+\newcommand{\oucdatedefense}{2017年05月28日}%论文答辩时间
+%\newcommand{\oucdatedegree}{2009年6月}%学位授予时间
+\newcommand{\oucgratitude}{谨以此论文献给我的导师和亲人！}%封面感谢语
+\newcommand{\oucetitle}{A Hybrid Convolutional Neural Network for Plankton Classification}%论文英文题目
+%\newcommand{\ouceauthor}{Haiyong Zheng}%作者英文姓名
+\newcommand{\oucthesis}{\textsc{OUCThesis}}
+%%%%%默认自定义命令%%%%%
+% 空下划线定义
+\newcommand{\oucblankunderline}[1]{\rule[-2pt]{#1}{.7pt}}
+\newcommand{\oucunderline}[2]{\underline{\hskip #1 #2 \hskip#1}}
+
+% 论文封面第一页
+%%不需要改动%%
+\vspace*{5cm}
+{\xiaoer\heiti\oucgratitude
+
+\begin{flushright}
+---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---~\ouccauthor
+\end{flushright}
+}
+
+\newpage
+
+% 论文封面第二页
+%%不需要改动%%
+\vspace*{1cm}
+\begin{center}
+  {\xiaoer\heiti\oucctitle}
+\end{center}
+\vspace{10.7cm}
+{\normalsize\songti
+\begin{flushright}
+{\renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{r@{}l}
+    学位论文答辩日期：~ & \oucunderline{1.8em}{\oucdatedefense} \\
+    指导教师签字：~ & \oucblankunderline{5cm} \\
+    答辩委员会成员签字：~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+  \end{tabular}
+}
+\end{flushright}
+}
+
+\newpage
+
+% 论文封面第三页
+%%不需要改动%%
+\vspace*{1cm}
+\begin{center}
+  {\xiaosan\heiti 独\hspace{1em}创\hspace{1em}声\hspace{1em}明}
+\end{center}
+\par{\normalsize\songti\parindent2em
+本人声明所呈交的学位论文是本人在导师指导下进行的研究工作及取得的研究成果。据我所知，除了文中特别加以标注和致谢的地方外，论文中不包含其他人已经发表或撰写过的研究成果，也不包含未获得~\oucblankunderline{7cm}（注：如没有其他需要特别声明的，本栏可空）或其他教育机构的学位或证书使用过的材料。与我一同工作的同志对本研究所做的任何贡献均已在论文中作了明确的说明并表示谢意。
+}
+\vskip1.5cm
+\begin{flushright}{\normalsize\songti
+  学位论文作者签名：\hskip2cm 签字日期：\hskip1cm 年 \hskip0.7cm 月\hskip0.7cm 日}
+\end{flushright}
+\vskip.5cm
+{\setlength{\unitlength}{0.1\textwidth}
+  \begin{picture}(10, 0.1)
+    \multiput(0,0)(0.2, 0){50}{\rule{0.15\unitlength}{.5pt}}
+  \end{picture}}
+\vskip1cm
+\begin{center}
+  {\xiaosan\heiti 学位论文版权使用授权书}
+\end{center}
+\par{\normalsize\songti\parindent2em
+本学位论文作者完全了解学校有关保留、使用学位论文的规定，并同意以下事项：
+\begin{enumerate}
+\item 学校有权保留并向国家有关部门或机构送交论文的复印件和磁盘，允许论文被查阅和借阅。
+\item 学校可以将学位论文的全部或部分内容编入有关数据库进行检索，可以采用影印、缩印或扫描等复制手段保存、汇编学位论文。同时授权清华大学“中国学术期刊(光盘版)电子杂志社”用于出版和编入CNKI《中国知识资源总库》，授权中国科学技术信息研究所将本学位论文收录到《中国学位论文全文数据库》。
+\end{enumerate}
+（保密的学位论文在解密后适用本授权书）
+}
+\vskip1.5cm
+{\parindent0pt\normalsize\songti
+学位论文作者签名：\hskip4.2cm\relax%
+导师签字：\relax\hspace*{1.2cm}\\
+签字日期：\hskip1cm 年\hskip0.7cm 月\hskip0.7cm 日\relax\hfill%
+签字日期：\hskip1cm 年\hskip0.7cm 月\hskip0.7cm 日\relax\hspace*{1.2cm}}
+
+\newpage
+
+\pagestyle{plain}
+\clearpage\pagenumbering{roman}
+
+% 中文摘要
+%%［需要填写：中文摘要、中文关键词］%%
+\begin{center}
+  {\sanhao[1.5]\heiti\oucctitle\\\vskip7pt 摘\hspace{1em}要}
+\end{center}
+{\normalsize\songti
+
+  \indent
+  浮游生物对海洋生态系统的平衡以及海洋的可持续性发展方面起着基础却关键性的作用。对于海洋渔业、环境监测和海洋生态系统保护等方面，浮游生物的相关研究，例如浮游生物物种组成、丰富度分布和某个区域或某段时间上物种的变化等，都具有科研性和应用性的重要意义。其中，浮游生物图像自动化分类是促进浮游生物相关研究发展的一项重要技术。
+
+  浮游生物庞大繁多的物种数量，以及不同浮游生物种类之间复杂的关系对自动化浮游生物图像的分类算法设计造成了巨大困难。与人脸、汽车或者日常生活中普通的物体分类所使用的特征不同，浮游生物有其独特的角毛和纹理等特征。因此，人工设计特征与分类器结合的传统方法不适用于解决浮游生物图像自动分类的问题。本文提出了一种基于多特征混合的卷积神经网络模型，用来实现对浮游生物图像自动化和有效的分类。本文的主要贡献有下列几点：
+
+\begin{enumerate}
+\item 针对浮游生物图像分类问题的难点和所存在的问题，分析讨论了浮游生物图像的特点，即类间相似性和类内差异性。通过形状特征和纹理特征相互补充，本论文提出了一种形状特征结合纹理特征的浮游生物图像分析方法。%对于浮游生物图像的特性，即不同种类的浮游生物，形状相似的，纹理基本不同；而相同种类的浮游生物，形状不同的，纹理基本相同；
+\item 将深度学习的卷积神经网络应用在浮游生物图像分类中，通过对卷积神经网络不同因素的设置：数据增强、网络的深度、网络的宽度和网络的激活函数，分析了卷积神经网络各个因素对浮游生物图像分类准确率的影响和重要性。%从实验结果出发，验证了深度学习中的卷积神经网络在浮游生物图像分类问题的可行性。
+\item 根据浮游生物图像特点，提出了一种基于多特征卷积神经网络的浮游生物图像分类方法。该方法是从原始图像、全局特征图像和局部特征图像出发，分别对应了全部特征、形状特征和纹理特征图像进行训练，通过新颖的交叉全连接层实现特征的融合。该方法从多个维度对浮游生物图像进行分析处理，交叉连接层能够有效消除特征之间的间隔，实现更可靠的特征融合，提升了网络模型的学习和表达能力。%在此基础上，该网络模型通过对浮游生物图像的多次迭代训练，将得到更具体和更高维度的特征，更有利于浮游生物图像的分类。实验结果表明了该方法可以提升准确率，有效地解决浮游生物分类问题。
+\end{enumerate}
+
+本论文所提出的基于多特征卷积神经网络模型在30类浮游生物的数据集上，进行了多组不同特征的对比实验，实验结果证明了本文的网络模型在分类准确率上比在原来卷积神经网络的基础上实现了准确率的提升，可以更有效和可靠地解决浮游生物图像分类问题。
+
+}
+\vskip12bp
+{\xiaosi\heiti\noindent
+关键词：浮游生物, 图像分类, 卷积神经网络, 多特征融合网络模型}
+
+\newpage
+
+% 英文摘要
+%%［需要填写：英文摘要、英文关键词］%%
+\begin{center}
+  {\sanhao[1.5]\heiti\oucetitle\\\vskip7pt Abstract}
+\end{center}
+{\normalsize\songti
+
+   Plankton play an are fundamental and essential role for ecosystem balance and sustainable development of oceans. The plankton survey, including species composition, abundance distribution as well as their spatial and temporal changes, has a very important scientific and practical significance for marine fishery, environmental monitoring and marine ecosystem protection. And automatic plankton classification is a key technology for accelerating the development of plankton survey. 
+
+   The large amount of plankton species and complex relationship among different classes bring difficulty for us to design an automatic plankton classification system. Unlike the common features used to classify faces, cars or other objects in daily life, plankton have their own special features such like setae and texture. So the classical classifiers with traditional hand-crafted features can not be work in plankton classification. A hybrid convolutional neural network model is proposed in this paper to classify plankton images automatically and effectively. The contributions in this paper are as follows:
+
+\begin{enumerate}
+\item For the difficulties and problems of plankton classifiction, we conclude characteristics of plankton which can be described as inter-class similarity and intra-class variance. A method for analyzing plankton images based on shape feature and texture feature is proposed.
+\item For classifying plankton images, we apply convolutional neural network in deep learning to resolve this problem. Some important factors in convolutional neural network have benn investigated in experiments to observe the performances of network. These factors include data augmentation, depth of network, width of network and activation function in network. Based on the experimental results, we can analyze the effect of these factors on plankton classification.
+on performance.
+\item A hybrid convolutional neural network is proposed according to the characteristics of plankton images. The model is trained on origin images, global feature images and local feature images, which can be regarded as all features, shape feature and texture feature. Then, these feature is combined by a novel fully connected cross. The hybrid model can explore more detailed and dimensional features, and fully connected cross can ignore the gap of different feature to achieve feature fusion, which improve the learning ability of network.
+\end{enumerate}
+
+The hybrid convolutional neural network proposed in this paper is based on 30 classes plankton dataset. Compared with networkst trained on different features, the experimental results shows that the model has improve the accuracy in plankton classification. Our model can classify plankton images automatically and more effectively.
+ 
+\vskip12bp
+{\xiaosi\heiti\noindent 
+\textbf{Keywords:plankton, image classification, convolutional neural network, hybrid networks}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
